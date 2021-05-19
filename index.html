@@ -6,8 +6,7 @@
         <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
        <title>Reservia</title>
 
     </head>
@@ -33,11 +32,22 @@
                     <p>En plein centre ville ou en pleine nature</p>
                     <form>
                         <div id="txt-rech">
-                            <div>                                
+                            <div id="txt-localise">                                
                                 <i class="fas fa-map-marker-alt"></i>                                                                
                             </div>                            
-                            <input type="text" placeholder="Rechercher votre hébergement" />
-                            <input type="button" value="Rechercher" />
+                            <input type="text" class="txt-imput-text" placeholder="Rechercher votre hébergement" />
+                            <input type="button"  class="btn-imput" value="Rechercher" />
+                        </div>
+                        <div id="grp-filter-all">
+                            <h4>Filtres</h4>
+                            <div class="grp-filter">
+                                <div class="grp-filter-icon">                                
+                                    <i class="fas fa-money-bill-wave"></i>                                                                
+                                </div>   
+                                <div class="grp-filter-btn">                                
+                                    <a href="#">Economique</a>                                                                
+                                </div>                           
+                            </div>
                         </div>
 
                     </form>

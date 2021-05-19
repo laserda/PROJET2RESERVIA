@@ -1,6 +1,9 @@
 :root{
     --height-content: 80px;
     --padding-nav: 40px;
+    --color-gris:#F2F2F2;
+    --color-bleu:#0065FC;
+    --color-blue-clair: #DEEBFF;
 }
 
 body{
@@ -14,7 +17,7 @@ body{
 #container{
     width: 100%;
     max-width: 1200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 }
 
@@ -45,7 +48,7 @@ header{
 }
 
 #h-nav .nav-insp a{
-    color: #0065FC;
+    color: var(--color-bleu);
     font-weight: 700;
 }
 
@@ -74,7 +77,63 @@ header{
 }
 
 #h-nav nav ul a:hover{
-    color: #0065FC;
-    border-top: #0065FC solid 2px;
+    color: var(--color-bleu);
+    border-top: var(--color-bleu) solid 2px;
     text-decoration: none;
+}
+
+#txt-rech{
+    display: flex;
+}
+
+#txt-localise{
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+#txt-rech .txt-imput-text{
+    border-radius: 0;
+    border:0.5px solid var(--color-gris);
+}
+
+#txt-rech .btn-imput{
+    border: none;
+    background-color: var(--color-bleu);
+    color: #FFF;
+    border-radius: 0 10px 10px 0;
+}
+#grp-filter-all{
+    display: flex;
+
+    height: 35px;
+    line-height: 35px;
+}
+
+#grp-filter-all .grp-filter{
+    display: flex;
+    align-items: center;
+}
+
+#grp-filter-all .grp-filter-icon{
+    height: 35px;
+    line-height: 35px;
+    width: 40px;
+    background-color: var(--color-blue-clair);
+    text-align: center;
+    color: var(--color-blue);
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+
+#grp-filter-all .grp-filter-btn{
+    padding: 0 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 0 10px 10px 0;
+    height: 35px;
+    line-height: 35px;
 }
