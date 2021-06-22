@@ -3,21 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <link href="fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
        <title>Reservia</title>
 
     </head>
     <body>
         <div class="container">
             <header class="header">
-                <img src="Images/logo/Reservia@3x.png"  srcset="Images/logo/Reservia.svg" alt="Logo reservia" />
+                <div class="logo"> 
+                    <img src="Images/logo/Reservia@3x.png"  srcset="Images/logo/Reservia.svg" alt="Logo reservia" />
+                </div>                
                 <div class="header_menu_nav">
                     <nav class="header__nav header--el">
                         <ul>
                             <li class="header--height "><a class="header--active" href="#heberge">Hébergements</a></li>
-                            <li class="header--height"><a  href="#">Activiés</a></li>
+                            <li class="header--height"><a  href="#activite">Activiés</a></li>
                         </ul>
                     </nav>
                     <div class="header--height header__insp header--el header--height-mob" >
@@ -45,38 +46,38 @@
                         <h4 class="grp-title-filter">Filtres</h4>
                         </div>
                         <div class="liste-filter">
-                        <div class="grp-filter">
-                            <div class="grp-filter-icon">                                
-                                <i class="fas fa-money-bill-wave  fas--color-primary"></i>                                                                
-                            </div>   
-                            <div class="grp-filter-btn">                                
-                                <a href="#">Economique</a>                                                                
-                            </div>                           
-                        </div>
-                        <div class="grp-filter">
-                            <div class="grp-filter-icon">                                
-                                <i class="fas fa-child  fas--color-primary"></i>                                                                
-                            </div>   
-                            <div class="grp-filter-btn">                                
-                                <a href="#">Familial</a>                                                                
-                            </div>                           
-                        </div>
-                        <div class="grp-filter">
-                            <div class="grp-filter-icon">                                
-                                <i class="fas fa-heart  fas--color-primary"></i>                                                                
-                            </div>   
-                            <div class="grp-filter-btn">                                
-                                <a href="#">Romantique</a>                                                                
-                            </div>                           
-                        </div>
-                        <div class="grp-filter">
-                            <div class="grp-filter-icon">                                
-                                <i class="fas fa-dog  fas--color-primary"></i>                                                                
-                            </div>   
-                            <div class="grp-filter-btn">                                
-                                <a href="#">Animaux auorisés</a>                                                                
-                            </div>                           
-                        </div>
+                            <div class="grp-filter">
+                                <div class="grp-filter-icon">                                
+                                    <i class="fas fa-money-bill-wave  fas--color-primary"></i>                                                                
+                                </div>   
+                                <div class="grp-filter-btn">                                
+                                    <a href="#">Economique</a>                                                                
+                                </div>                           
+                            </div>
+                            <div class="grp-filter">
+                                <div class="grp-filter-icon">                                
+                                    <i class="fas fa-child  fas--color-primary"></i>                                                                
+                                </div>   
+                                <div class="grp-filter-btn">                                
+                                    <a href="#">Familial</a>                                                                
+                                </div>                           
+                            </div>
+                            <div class="grp-filter">
+                                <div class="grp-filter-icon">                                
+                                    <i class="fas fa-heart  fas--color-primary"></i>                                                                
+                                </div>   
+                                <div class="grp-filter-btn">                                
+                                    <a href="#">Romantique</a>                                                                
+                                </div>                           
+                            </div>
+                            <div class="grp-filter">
+                                <div class="grp-filter-icon">                                
+                                    <i class="fas fa-dog  fas--color-primary"></i>                                                                
+                                </div>   
+                                <div class="grp-filter-btn">                                
+                                    <a href="#">Animaux auorisés</a>                                                                
+                                </div>                           
+                            </div>
                         </div> 
                                                 
                     </div>                         
@@ -91,8 +92,7 @@
                 <article class="heb-mars bloc-heberge">
                     <div class="card-head">
                         <h1 >Hébergements à Marseille</h1>
-                    </div>
-                    
+                    </div>                    
                     <div class="card-list">
                         <div class="card">
                             <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
@@ -253,7 +253,59 @@
                   
                 </aside>
             </section>
-                    
+
+            <section id="activite">
+                <div class="card-head">
+                    <h1 >Activiés à Marseille</h1>
+                </div>
+                <article class="activite">
+                    <div class="activite-card">
+                        <div class="activite-card__long">
+                            <img src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-title">   
+                                Vieux port                                        
+                            </div>
+                        </div>
+                        <div class="activite-card__doubleImg">
+                            <div class="activite-card__short">
+                                <img src="Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Auberge la cannebière" />
+                                <div class="card-title">   
+                                    Fort de pomègues                                    
+                                </div>
+                            </div>
+                            <div class="activite-card__short">
+                                <img src="Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Auberge la cannebière" />
+                                <div class="card-title">   
+                                    Îles du Frioul                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activite-card">
+                        <div class="activite-card__long">
+                            <img src="Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-title">   
+                                Vieux port                                        
+                            </div>
+                        </div>
+                        <div class="activite-card__doubleImg">
+                            <div class="activite-card__short">
+                                <img src="Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Auberge la cannebière" />
+                                <div class="card-title">   
+                                    Fort de pomègues                                    
+                                </div>
+                            </div>
+                            <div class="activite-card__short">
+                                <img src="Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Auberge la cannebière" />
+                                <div class="card-title">   
+                                    Îles du Frioul                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+               
+            </section>
             <footer class="footer">
                 <div>
                     <h4>A propos</h4>
