@@ -2,286 +2,283 @@
 <html>
     <head>
         <meta charset="utf-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> -->
        <title>Reservia</title>
 
     </head>
     <body>
-        <div id="container">
-            <header>
-                    <img src="Images/logo/Reservia@3x.png" srcset="Images/logo/Reservia.svg" alt="Logo reservia" />
-                    <div class="h-nav">
-                        <nav>
-                            <ul>
-                                <li class="h-nav--height"><a  href="#">Hébergements</a></li>
-                                <li class="h-nav--height"><a  href="#">Activiés</a></li>
-                            </ul>
-                        </nav>
-                        <div class="h-nav--height h-nav__insp" >
-                            <a href="#">S'inscrire</a>
+        <div class="container">
+            <header class="header">
+                <img src="Images/logo/Reservia@3x.png"  srcset="Images/logo/Reservia.svg" alt="Logo reservia" />
+                <div class="header_menu_nav">
+                    <nav class="header__nav header--el">
+                        <ul>
+                            <li class="header--height "><a class="header--active" href="#heberge">Hébergements</a></li>
+                            <li class="header--height"><a  href="#">Activiés</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header--height header__insp header--el header--height-mob" >
+                        <a href="#" class="">S'inscrire</a>
+                    </div>
+                </div>    
+            </header>  
+           
+            <section class="filtres">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form >
+                    <div class="txt-rech">
+                        <div class="txt-localise">                                
+                            <i class="fas fa-map-marker-alt"></i>                                                                
+                        </div>                            
+                        <input type="text" class="txt-imput-text" value="Marseille, France" placeholder="Rechercher votre hébergement" />
+                        <button type="button"  class="btn-imput" >
+                            <span class="label">Rechercher</span> 
+                            <span class="icon"><i class="fas fa-search"></i></span>
+                        </button>
+                    </div>
+                    <div class="grp-filter-all">
+                        <div class="title-filter">
+                        <h4 class="grp-title-filter">Filtres</h4>
                         </div>
-                    </div>    
-            </header>
-           <main>
-               <section>
-                   <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <form>
-                        <div id="txt-rech">
-                            <div id="txt-localise">                                
-                                <i class="fas fa-map-marker-alt"></i>                                                                
-                            </div>                            
-                            <input type="text" class="txt-imput-text" value="Marseille, France" placeholder="Rechercher votre hébergement" />
-                            <input type="button"  class="btn-imput" value="Rechercher" />
+                        <div class="liste-filter">
+                        <div class="grp-filter">
+                            <div class="grp-filter-icon">                                
+                                <i class="fas fa-money-bill-wave  fas--color-primary"></i>                                                                
+                            </div>   
+                            <div class="grp-filter-btn">                                
+                                <a href="#">Economique</a>                                                                
+                            </div>                           
                         </div>
-                        <div id="grp-filter-all">
-                            <h4 id="grp-tirle-filter">Filtres</h4>
-                            <div class="grp-filter">
-                                <div class="grp-filter-icon">                                
-                                    <i class="fas fa-money-bill-wave" style="color: #0065FC;"></i>                                                                
-                                </div>   
-                                <div class="grp-filter-btn">                                
-                                    <a href="#">Economique</a>                                                                
-                                </div>                           
-                            </div>
-                            <div class="grp-filter">
-                                <div class="grp-filter-icon">                                
-                                    <i class="fas fa-child" style="color: #0065FC;"></i>                                                                
-                                </div>   
-                                <div class="grp-filter-btn">                                
-                                    <a href="#">Familial</a>                                                                
-                                </div>                           
-                            </div>
-                            <div class="grp-filter">
-                                <div class="grp-filter-icon">                                
-                                    <i class="fas fa-heart" style="color: #0065FC;"></i>                                                                
-                                </div>   
-                                <div class="grp-filter-btn">                                
-                                    <a href="#">Romantique</a>                                                                
-                                </div>                           
-                            </div>
-                            <div class="grp-filter">
-                                <div class="grp-filter-icon">                                
-                                    <i class="fas fa-dog" style="color: #0065FC;"></i>                                                                
-                                </div>   
-                                <div class="grp-filter-btn">                                
-                                    <a href="#">Animaux auorisés</a>                                                                
-                                </div>                           
-                            </div>
+                        <div class="grp-filter">
+                            <div class="grp-filter-icon">                                
+                                <i class="fas fa-child  fas--color-primary"></i>                                                                
+                            </div>   
+                            <div class="grp-filter-btn">                                
+                                <a href="#">Familial</a>                                                                
+                            </div>                           
                         </div>
+                        <div class="grp-filter">
+                            <div class="grp-filter-icon">                                
+                                <i class="fas fa-heart  fas--color-primary"></i>                                                                
+                            </div>   
+                            <div class="grp-filter-btn">                                
+                                <a href="#">Romantique</a>                                                                
+                            </div>                           
+                        </div>
+                        <div class="grp-filter">
+                            <div class="grp-filter-icon">                                
+                                <i class="fas fa-dog  fas--color-primary"></i>                                                                
+                            </div>   
+                            <div class="grp-filter-btn">                                
+                                <a href="#">Animaux auorisés</a>                                                                
+                            </div>                           
+                        </div>
+                        </div> 
+                                                
+                    </div>                         
+                    <div class="infos">
+                        <i class="fas fa-info fas--color-primary" ></i> 
+                        <span>Plus de 500 logements sont disponibles dans cette ville</span> 
+                    </div>       
+                </form>   
+            </section>
 
-                    </form>
-                    <p class="infos"><i class="fas fa-info" style="color: #0065FC;"></i> Plus de 500 logements sont disponibles dans cette ville</p>
-                </section>
-
-                <section id="heberge">
-                    <article id="heb-mars" class="bloc-heberge">
-                        <h1>Hébergements à Marseille</h1>
-                        <div class="card-list">
-                            <div class="card">
-                                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
-                                <div class="card-text">                                    
-                                    <p>
-                                        <span class="card-title">Auberge la cannebière</span>
-                                        <br/>
-                                        <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                        <br/>
-                                        <span class="rating">
-                                            <a href="#5" title="Donner 5 étoiles">★</a>
-                                            <a href="#4" title="Donner 4 étoiles">★</a>
-                                            <a href="#3" title="Donner 3 étoiles">★</a>
-                                            <a href="#2" title="Donner 2 étoiles">★</a>
-                                            <a href="#1" title="Donner 1 étoile">★</a>
-                                        </span>                                    
-                                    </p>                                    
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
-                                <div class="card-text">                                    
-                                    <p>
-                                        <span class="card-title">Auberge la cannebière</span>
-                                        <br/>
-                                        <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                        <br/>
-                                        <span class="rating">
-                                            <a href="#5" title="Donner 5 étoiles">★</a>
-                                            <a href="#4" title="Donner 4 étoiles">★</a>
-                                            <a href="#3" title="Donner 3 étoiles">★</a>
-                                            <a href="#2" title="Donner 2 étoiles">★</a>
-                                            <a href="#1" title="Donner 1 étoile">★</a>
-                                        </span>                                    
-                                    </p>                                    
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
-                                <div class="card-text">                                    
-                                    <p>
-                                        <span class="card-title">Auberge la cannebière</span>
-                                        <br/>
-                                        <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                        <br/>
-                                        <span class="rating">
-                                            <a href="#5" title="Donner 5 étoiles">★</a>
-                                            <a href="#4" title="Donner 4 étoiles">★</a>
-                                            <a href="#3" title="Donner 3 étoiles">★</a>
-                                            <a href="#2" title="Donner 2 étoiles">★</a>
-                                            <a href="#1" title="Donner 1 étoile">★</a>
-                                        </span>                                    
-                                    </p>                                    
-                                </div>
+            <section id="heberge">
+                <article class="heb-mars bloc-heberge">
+                    <div class="card-head">
+                        <h1 >Hébergements à Marseille</h1>
+                    </div>
+                    
+                    <div class="card-list">
+                        <div class="card">
+                            <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-text">                                
+                                <div class="card-title">Auberge la cannebière</div>
+                                <div class="card-body">Nuit à partir de <span>25€</span></div>                            
+                                <span class="rating">
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                </span>                                           
                             </div>
                         </div>
-                        <div class="card-list">
-                            <div class="card">
-                                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
-                                <div class="card-text">                                    
-                                    <p>
-                                        <span class="card-title">Auberge la cannebière</span>
-                                        <br/>
-                                        <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                        <br/>
-                                        <span class="rating">
-                                            <a href="#5" title="Donner 5 étoiles">★</a>
-                                            <a href="#4" title="Donner 4 étoiles">★</a>
-                                            <a href="#3" title="Donner 3 étoiles">★</a>
-                                            <a href="#2" title="Donner 2 étoiles">★</a>
-                                            <a href="#1" title="Donner 1 étoile">★</a>
-                                        </span>                                    
-                                    </p>                                    
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
-                                <div class="card-text">                                    
-                                    <p>
-                                        <span class="card-title">Auberge la cannebière</span>
-                                        <br/>
-                                        <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                        <br/>
-                                        <span class="rating">
-                                            <a href="#5" title="Donner 5 étoiles">★</a>
-                                            <a href="#4" title="Donner 4 étoiles">★</a>
-                                            <a href="#3" title="Donner 3 étoiles">★</a>
-                                            <a href="#2" title="Donner 2 étoiles">★</a>
-                                            <a href="#1" title="Donner 1 étoile">★</a>
-                                        </span>                                    
-                                    </p>                                    
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
-                                <div class="card-text">                                    
-                                    <p>
-                                        <span class="card-title">Auberge la cannebière</span>
-                                        <br/>
-                                        <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                        <br/>
-                                        <span class="rating">
-                                            <a href="#5" title="Donner 5 étoiles">★</a>
-                                            <a href="#4" title="Donner 4 étoiles">★</a>
-                                            <a href="#3" title="Donner 3 étoiles">★</a>
-                                            <a href="#2" title="Donner 2 étoiles">★</a>
-                                            <a href="#1" title="Donner 1 étoile">★</a>
-                                        </span>                                    
-                                    </p>                                    
-                                </div>
+                        <div class="card">
+                            <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-text">                                
+                                <div class="card-title">Auberge la cannebière</div>
+                                <div class="card-body">Nuit à partir de <span>25€</span></div>                            
+                                <span class="rating">
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                </span>                                           
                             </div>
                         </div>
-                    </article>
-                    <article id="heb-pop" class="bloc-heberge">
-                        <div class="card2-head">
-                            <h1>Les plus populaires</h1>
-                            <i class="fas fa-chart-line"></i>
+                        <div class="card">
+                            <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-text">                                
+                                <div class="card-title">Auberge la cannebière</div>
+                                <div class="card-body">Nuit à partir de <span>25€</span></div>                            
+                                <span class="rating">
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                </span>                                           
+                            </div>
                         </div>
+                    </div>
+                    <div class="card-list">
+                        <div class="card">
+                            <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-text">                                
+                                <div class="card-title">Auberge la cannebière</div>
+                                <div class="card-body">Nuit à partir de <span>25€</span></div>                            
+                                <span class="rating">
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                </span>                                           
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-text">                                
+                                <div class="card-title">Auberge la cannebière</div>
+                                <div class="card-body">Nuit à partir de <span>25€</span></div>                            
+                                <span class="rating">
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                </span>                                           
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière" />
+                            <div class="card-text">                                
+                                <div class="card-title">Auberge la cannebière</div>
+                                <div class="card-body">Nuit à partir de <span>25€</span></div>                            
+                                <span class="rating">
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                    <i class="fas fa-star fas--color-primary"></i>
+                                </span>                                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Afficher plus</p>
+                    </div>
+                    
+                </article>
+                <aside class="heb-pop bloc-heberge">
+                    <div class="card2-head">
+                        <h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card2-list">
                         <div class="card2">
                             <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" />
-                            <div class="card2-text">                                    
-                                <p>
-                                    <span class="card-title">Hôtel le soleil du matin</span>
-                                    <br/>
-                                    <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                    <br/>
+                            <div class="card2-text">
+                                <div class="card2-body">
+                                    <div>
+                                        <div class="card-title">Hôtel le soleil du matin</div>
+                                        <div class="card-body">Nuit à partir de <span>25€</span></div>
+                                    </div>                            
                                     <span class="rating">
-                                        <a href="#5" title="Donner 5 étoiles">★</a>
-                                        <a href="#4" title="Donner 4 étoiles">★</a>
-                                        <a href="#3" title="Donner 3 étoiles">★</a>
-                                        <a href="#2" title="Donner 2 étoiles">★</a>
-                                        <a href="#1" title="Donner 1 étoile">★</a>
-                                    </span>                                    
-                                </p>                                    
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                    </span> 
+                                </div>
+                                                                   
                             </div>
                         </div>
                         <div class="card2">
                             <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" />
-                            <div class="card2-text">                                    
-                                <p>
-                                    <span class="card-title">Hôtel le soleil du matin</span>
-                                    <br/>
-                                    <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                    <br/>
+                            <div class="card2-text">
+                                <div class="card2-body">
+                                    <div>
+                                        <div class="card-title">Hôtel le soleil du matin</div>
+                                        <div class="card-body">Nuit à partir de <span>25€</span></div>
+                                    </div>                            
                                     <span class="rating">
-                                        <a href="#5" title="Donner 5 étoiles">★</a>
-                                        <a href="#4" title="Donner 4 étoiles">★</a>
-                                        <a href="#3" title="Donner 3 étoiles">★</a>
-                                        <a href="#2" title="Donner 2 étoiles">★</a>
-                                        <a href="#1" title="Donner 1 étoile">★</a>
-                                    </span>                                    
-                                </p>                                    
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                    </span> 
+                                </div>
+                                                                   
                             </div>
                         </div>
                         <div class="card2">
                             <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" />
-                            <div class="card2-text">                                    
-                                <p>
-                                    <span class="card-title">Hôtel le soleil du matin</span>
-                                    <br/>
-                                    <span class="card-body">Nuit à partir de <span>25€</span></span>
-                                    <br/>
+                            <div class="card2-text">
+                                <div class="card2-body">
+                                    <div>
+                                        <div class="card-title">Hôtel le soleil du matin</div>
+                                        <div class="card-body">Nuit à partir de <span>25€</span></div>
+                                    </div>                            
                                     <span class="rating">
-                                        <a href="#5" title="Donner 5 étoiles">★</a>
-                                        <a href="#4" title="Donner 4 étoiles">★</a>
-                                        <a href="#3" title="Donner 3 étoiles">★</a>
-                                        <a href="#2" title="Donner 2 étoiles">★</a>
-                                        <a href="#1" title="Donner 1 étoile">★</a>
-                                    </span>                                    
-                                </p>                                    
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                        <i class="fas fa-star fas--color-primary"></i>
+                                    </span> 
+                                </div>
+                                                                   
                             </div>
                         </div>
-                    </article>
-                </section>
-           </main>
-           <footer>
-               <div id="footer">
-                    <div>
-                        <h4>A propos</h4>
-                        <ul>
-                            <li>Fonctionnement du site</li>
-                            <li>Conditions génerales de vente</li>
-                            <li>Données et confidentialité</li>
-                        </ul>
                     </div>
-                    <div>
-                        <h4>Nos hébergements</h4>
-                        <ul>
-                            <li>Charte qualité</li>
-                            <li>Soumettre votre hôtel</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Assistance</h4>
-                        <ul>
-                            <li>Centre d'aide</li>
-                            <li>Nous contacter</li>
-                        </ul>
-                    </div>
-               </div>               
-        </footer>
+                  
+                </aside>
+            </section>
+                    
+            <footer class="footer">
+                <div>
+                    <h4>A propos</h4>
+                    <ul>
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions génerales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Nos hébergements</h4>
+                    <ul>
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>           
+            </footer>
         </div>
       
     </body>
