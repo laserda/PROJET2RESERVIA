@@ -416,8 +416,6 @@ ul{
  @media all and (max-width: 1024px)
 {
     .header{
-        width: auto;
-        height: auto;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -518,8 +516,6 @@ ul{
         padding: 0;
     }
 
-   
-    
     .activite-card__long, .activite-card__doubleImg{
         width: 100%;
     }
@@ -574,8 +570,6 @@ ul{
         flex-direction: column;        
         margin-bottom: 5px;
     }
-
-
 
     .activite-card__long img{
         height: 140px;
