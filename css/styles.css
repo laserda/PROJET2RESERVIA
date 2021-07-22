@@ -9,7 +9,6 @@
     --padding-nav: 40px;
     --color-gris:#F2F2F2;
     --color-bleu:#0065FC;
-    --color-blue-clair: #DEEBFF;
 }
 
 body{
@@ -393,8 +392,9 @@ ul{
 .activite-card__long{
     height: 380px;
 }
+/******Fin activité ******/
 
-
+/******Début Footer ******/
  .footer{   
      display:flex;
      justify-content: flex-start;
@@ -411,6 +411,8 @@ ul{
      width: 100%;     
     margin-right: 200px;
  }
+
+/******Fin Footer ******/
 
  /**** Tablet ****/
  @media all and (max-width: 1024px)
