@@ -141,6 +141,11 @@ ul{
     padding:  0 15px;
 }
 
+::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
 .txt-rech .btn-imput{
     border: none;
     background-color: var(--color-blue);
@@ -208,6 +213,7 @@ ul{
     border-radius: 0 20px 20px 0;
     height: 37px;
     line-height: 37px;
+    font-weight: bold;
 }
 
 .grp-filter a{
