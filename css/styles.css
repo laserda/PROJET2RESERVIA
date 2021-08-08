@@ -276,7 +276,7 @@ ul{
     margin-bottom: 30px;
 }
 
-.card-list a,.card2-list a{
+.card-list a,.card2-list a,.footer a{
     text-decoration: none;
     color: black;
 }
