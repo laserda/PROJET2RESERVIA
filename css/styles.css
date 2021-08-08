@@ -31,6 +31,11 @@ body,button{
     border-radius: 20px; 
 }
 
+.card:hover,.card2:hover,.activite-card__short:hover,.activite-card__long:hover{
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
 .header,.filtres,#heberge,#activite{
     width: 95%;
     margin: auto;    
@@ -271,8 +276,16 @@ ul{
     margin-bottom: 30px;
 }
 
+.card-list a,.card2-list a{
+    text-decoration: none;
+    color: black;
+}
 
-/* /. */
+
+/* cardre */
+
+
+
 .card2-head,.card-head,.card-footer{
     margin: 0 10px 0 10px;
 }
@@ -285,6 +298,9 @@ ul{
     width: 40%;
     margin: 0 10px 0 10px;
 }
+
+
+
 
 .card img{  
     height: 120px;
