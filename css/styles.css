@@ -144,9 +144,10 @@ ul{
     border-radius: 0;
     border:0.5px solid var(--color-gris);
     padding:  0 15px;
+    width: 250px;
 }
 
-::placeholder{
+::placeholder,::-moz-placeholder,::-webkit-input-placeholder{
     color: black;
     font-weight: bold;
 }
@@ -491,7 +492,7 @@ ul{
          width: 100%; 
     }
 
-    
+   
     .card2{
         margin: 0 10px 20px 5px;
     }
@@ -499,7 +500,9 @@ ul{
     .card2-list{
         display: flex;
     }
-    
+    .card2-list img{
+        width: 110px;
+    }
 
     div.header--height-mob.header--height, div.header--height-mob.header--height a{
         height: 40px;
@@ -613,6 +616,11 @@ ul{
         margin: 0 20px 0 20px;
     }
 
+    .txt-rech .btn-imput{
+        border-radius:10px;
+        margin-left: -5px;
+    }
+
     .btn-imput .label{
         display: none;
     }
@@ -647,4 +655,10 @@ ul{
         ma
     } */
 
+}
+
+@media all and (max-width: 767px){
+    .txt-rech .txt-imput-text{
+        width: 200px;
+    }
 }
