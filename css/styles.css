@@ -420,6 +420,40 @@ ul{
 }
 
 
+.activite-card__short--height-long{
+    height: 280px;
+}
+
+.activite-card__short--height-long img{
+    height: 240px;
+}
+
+.activite-card__short--height-short{
+    height: 200px;
+}
+
+.activite-card__short--height-short img{
+    height: 160px;
+}
+
+
+.activite-card__short--height-long2{
+    height: 260px;
+}
+
+.activite-card__short--height-long2 img{
+    height: 220px;
+}
+
+.activite-card__short--height-short2{
+    height: 220px;
+}
+
+.activite-card__short--height-short2 img{
+    height: 180px;
+}
+
+
 
 
 .activite-card__long img{
